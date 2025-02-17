@@ -5,13 +5,11 @@ body {
     color: #434455;
     /* Основной цвет текста */
     margin: 0;
-    padding: 0;
 }
 
 /* Стили хедера */
 .header {
     justify-content: space-between;
-    padding: 20px 40px;
     background-color: #ffffff;
 }
 
@@ -41,13 +39,12 @@ body {
 /* Навигация */
 .header-nav-list {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    
 }
 
 .header-nav-item a {
     text-decoration: none;
-    color: #434455;
+    color: #2e2f42;;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -97,8 +94,6 @@ body {
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
     color: #ffffff;
-    border: none;
-    cursor: pointer;
 }
 
 .button-business:hover
@@ -129,7 +124,6 @@ body {
 }
 
 .team ul {
-    display: flex;
     list-style: none;
 }
 .team-section {
@@ -168,7 +162,6 @@ body {
 
 .portfolio-list-item {
     background-color: #FFFFFF;
-    display: flex;
     flex-direction: column;
     text-align: center;
     list-style: none;
