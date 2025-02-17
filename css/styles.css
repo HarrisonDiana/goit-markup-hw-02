@@ -1,196 +1,241 @@
+/* Основные стили */
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #f4f4fd ;
-}
-
-/* header */
-.header {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     background-color: #ffffff;
-    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Стили хедера */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+/* Логотип с разными цветами */
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
-}
-
-.logo-style {
-    color: #2e2f42;
-}
-
-.header-nav-list {
-    list-style-type: none;
-}
-
-.header-nav-item {
     text-decoration: none;
 }
 
-.nav-header {
-    font-style: normal;
+.logo-web {
+    color: #4D5AE5;
+    /* Цвет "WEB" */
 }
 
-/* contacts */
+.logo-studio {
+    color: #2E2F42;
+    /* Цвет "STUDIO" */
+}
+
+/* Навигация */
+.nav-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav-item a {
+    text-decoration: none;
+    color: #2E2F42;
+    font-weight: 500;
+}
+
+.header-nav-item a:hover,
+.header-nav-item a:focus {
+    color: #404bbf;
+}
+
+/* Контакты */
 .contacts ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
 .contacts-link {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+    text-decoration: none;
+    color: #2E2F42;
 }
 
-/* button */
+.contacts-link:hover {
+    color: #4D5AE5;
+}
+
+/* Hero секция */
+.business {
+    text-align: center;
+    background-color: #2E2F42;
+    /* Тёмный фон */
+    color: #ffffff;
+    padding: 100px 20px;
+}
+
+.business h1 {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
 .button-business {
-    font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    background: #4d5ae5;
-    cursor: pointer;
-    color: #fff;
+    padding: 12px 24px;
+    background-color: #4D5AE5;
+    color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    cursor: pointer;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
-.button-business:hover {
-    background-color: #2e2f42;
+.button-business:hover,
+.button-business:focus {
+    background-color: #404bbf;
 }
 
-/* advantages */
-.advanteges-title {
-    font-weight: 500;
+/* Описание */
+.advantages-title {
     font-size: 20px;
-    line-height: 1.2;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+    font-weight: 500;
+    color: #2E2F42;
 }
 
-.advanteges-text {
-    font-weight: 400;
+.advantages-text {
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.02em;
     color: #434455;
 }
 
-/* team */
+/* Секция команды */
 .team {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.02em;
     text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4fd;
+}
+
+.team-section {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: #2e2f42;
 }
 
-.team-section ul {
-    border-radius: 4px;
-    padding: 0 0 32px 0;
-    width: 264px;
-    height: 260px;
-    background: #fff;
+.team ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.team-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .text-main {
-    font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.02em;
-    text-align: center;
+    font-weight: 500;
     color: #2e2f42;
 }
 
 .text-main-info {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.02em;
-    text-align: center;
     color: #434455;
 }
 
-/* portfolio */
-.portfolio-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.02em;
+/* Секция портфолио */
+.portfolio {
     text-align: center;
-    color: #2e2f42;
+    padding: 60px 20px;
 }
 
-.portfolio-list-item {
-    width: 1128px;
-    height: 420px;
-}
-
-.potfolio-item-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    font-family: "Roboto", sans-serif;
+.portfolio-title {
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom:40px;
+}
+.portfolio-title{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.portfolio-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+.portfolio-item-title {
+    font-size: 20px;
+    font-weight: 500;
     color: #2e2f42;
 }
 
 .portfolio-item-text {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.02em;
     color: #434455;
 }
 
-/* footer */
+/* Footer */
 .footer {
-    width: 100%;
-    height: 312px;
     background-color: #2e2f42;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 20px;
+    color: #f4f4fd;
 }
 
-.logo-footer {
+.footer .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.logo-footer-span {
+    color: #f4f4fd;
+    /* Цвет "Studio" */
 }
 
 .footer-p {
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.02em;
-    color: #fff;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding: 20px;
+    color: #f4f4fd;
+    margin-top: 15px;
 }
