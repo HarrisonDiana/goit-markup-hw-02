@@ -2,16 +2,15 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
+    color: #434455;
+    /* Основной цвет текста */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Стили хедера */
 .header {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px 40px;
     background-color: #ffffff;
 }
@@ -23,37 +22,35 @@ body {
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
 }
-
+.logo-text {
+    color: #2E2F42;
+    /* Цвет "Studio" */
+}
 .logo-web {
     color: #4D5AE5;
-    /* Цвет "WEB" */
 }
 
 .logo-studio {
     color: #2E2F42;
-    /* Цвет "STUDIO" */
 }
 
 /* Навигация */
-.nav-header {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
 .header-nav-list {
     list-style: none;
     display: flex;
     gap: 20px;
-    padding: 0;
-    margin: 0;
 }
 
 .header-nav-item a {
     text-decoration: none;
-    color: #2E2F42;
+    color: #434455;
     font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .header-nav-item a:hover,
@@ -64,12 +61,11 @@ body {
 /* Контакты */
 .contacts ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
 }
-
+.contacts {
+    font-style: normal;
+    /* Исправлено: убран курсив */
+}
 .contacts-link {
     text-decoration: none;
     color: #2E2F42;
@@ -83,9 +79,7 @@ body {
 .business {
     text-align: center;
     background-color: #2E2F42;
-    /* Тёмный фон */
     color: #ffffff;
-    padding: 100px 20px;
 }
 
 .business h1 {
@@ -96,17 +90,18 @@ body {
 }
 
 .button-business {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 16px;
-    padding: 12px 24px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     background-color: #4D5AE5;
     color: #ffffff;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
 }
 
-.button-business:hover,
+.button-business:hover
 .button-business:focus {
     background-color: #404bbf;
 }
@@ -115,85 +110,66 @@ body {
 .advantages-title {
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     color: #2E2F42;
 }
 
 .advantages-text {
     font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #434455;
 }
 
 /* Секция команды */
 .team {
     text-align: center;
-    padding: 60px 20px;
     background-color: #f4f4fd;
-}
-
-.team-section {
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
 }
 
 .team ul {
     display: flex;
-    justify-content: center;
     list-style: none;
-    padding: 0;
-    gap: 20px;
 }
-
-.team-item {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+.team-section {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
 }
-
 .text-main {
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     color: #2e2f42;
 }
 
 .text-main-info {
     font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #434455;
 }
 
 /* Секция портфолио */
 .portfolio {
     text-align: center;
-    padding: 60px 20px;
 }
 
 .portfolio-title {
     font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-bottom:40px;
 }
-.portfolio-title{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 1200px;
-}
+
 .portfolio-list-item {
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
     text-align: center;
     list-style: none;
 }
@@ -201,11 +177,15 @@ body {
 .portfolio-item-title {
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     color: #2e2f42;
 }
 
 .portfolio-item-text {
     font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #434455;
 }
 
@@ -213,7 +193,6 @@ body {
 .footer {
     background-color: #2e2f42;
     text-align: center;
-    padding: 40px 20px;
     color: #f4f4fd;
 }
 
@@ -221,21 +200,20 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-bottom: 10px;
-    text-decoration: none;
 }
 
 .logo-footer-span {
     color: #f4f4fd;
-    /* Цвет "Studio" */
 }
 
 .footer-p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 15px;
 }
