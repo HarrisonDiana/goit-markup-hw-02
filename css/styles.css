@@ -3,13 +3,10 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
     color: #434455;
-    /* Основной цвет текста */
-    margin: 0;
 }
 
 /* Стили хедера */
 .header {
-    justify-content: space-between;
     background-color: #ffffff;
 }
 
@@ -22,7 +19,7 @@ body {
     text-decoration: none;
     line-height: 1.5;
     line-height: 1.17;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     color: #4D5AE5;
 }
 .logo-text {
@@ -45,7 +42,7 @@ body {
 
 .header-nav-item a {
     text-decoration: none;
-    color: #434455;
+    color: #2e2f42;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -66,11 +63,14 @@ body {
 }
 .contacts-link {
     text-decoration: none;
-    color: #2E2F42;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
-.contacts-link:hover {
-    color: #4D5AE5;
+.contacts-link:hover
+.contacts-link:focus {
+    color: #404bbf;
 }
 
 /* Hero секция */
@@ -93,11 +93,12 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    background-color: #4D5AE5;
+    background-color: #404BBF;
     color: #ffffff;
+    cursor: point;
 }
 
-.button-business:hover
+.button-business:hover,
 .button-business:focus {
     background-color: #404BBF;
 }
@@ -114,7 +115,7 @@ body {
 .advantages-text {
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     color: #434455;
 }
 
@@ -164,12 +165,10 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    content: "Online Courses";
 }
 
 .portfolio-list-item {
     background-color: #FFFFFF;
-    flex-direction: column;
     text-align: center;
     list-style: none;
 }
