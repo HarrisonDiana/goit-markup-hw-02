@@ -17,7 +17,7 @@ body {
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    line-height: 1.5;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #4D5AE5;
 }
@@ -31,6 +31,10 @@ body {
 
 .logo-studio {
     color: #2E2F42;
+}
+.logo:hover,
+.logo:focus {
+    color: #404bbf;
 }
 
 /* Навигация */
@@ -92,9 +96,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    background-color: #404BBF;
+    background-color: #4D5AE5;
     color: #ffffff;
-    cursor: point;
+    cursor: pointer;
 }
 
 .button-business:hover,
@@ -114,7 +118,7 @@ body {
 .advantages-text {
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     color: #434455;
 }
 
@@ -137,6 +141,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    text-align: center;
 }
 .text-main {
     font-size: 20px;
